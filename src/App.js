@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import GithubUsers from './components/GithubUsers';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GithubUsers/>
     </div>
   );
 }
 
 export default App;
+
+
+// we use Async Await to make promise easy and simplest 
+// when we call fetch api, it will return promise and 
+// to handle promise we have .then .catch
+// promise results in pending state, either Resolved or Reject
